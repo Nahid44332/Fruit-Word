@@ -1,0 +1,47 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.title {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.grid div {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #e0e0e0;
+  text-align: center;
+  line-height: 2.5;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.grid div.selected {
+  background-color: #ffeb3b;
+}
+
+.grid div.found {
+  background-color: #8bc34a;
+  color: white;
+}
+
+#word-list .list-group-item {
+  font-weight: 500;
+}
